@@ -1,0 +1,9 @@
+parameters:
+    bootstrapFiles:
+        - config/paths.php
+    level: 7
+    checkMissingIterableValueType: false
+    treatPhpDocTypesAsCertain: false
+    checkGenericClassInNonGenericObjectType: false
+    paths:
+        - src/

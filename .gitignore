@@ -1,0 +1,7 @@
+# Project
+config/config.php
+vendor
+.phpunit.result.cache
+
+# IDE
+.idea

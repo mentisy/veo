@@ -1,0 +1,43 @@
+{
+    "name": "avolle/veo",
+    "description": "Perform Veo-related tasks",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Volle",
+            "email": "alexander@avolle.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "cakephp/console": "5.0.0-beta1",
+        "cakephp/http": "^5.0@beta",
+        "cakephp/collection": "^5.0@beta",
+        "cakephp/chronos": "^3.0@beta"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.2",
+        "phpunit/phpunit": "^10.0",
+        "cakephp/cakephp-codesniffer": "^5.1",
+        "phpstan/phpstan": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Avolle\\Veo\\": "src/",
+            "Avolle\\Veo\\Test\\": "tests/"
+        }
+    },
+    "minimum-stability": "beta",
+    "scripts": {
+        "cs-check": "phpcs --colors -p src/ tests/",
+        "cs-fix": "phpcbf --colors -p src/ tests/",
+        "stan": "phpstan analyze",
+        "test": "phpunit --colors=always"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
