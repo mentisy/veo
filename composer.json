@@ -11,10 +11,10 @@
     ],
     "require": {
         "php": ">=8.1",
-        "cakephp/console": "5.0.0-beta1",
-        "cakephp/http": "^5.0@beta",
-        "cakephp/collection": "^5.0@beta",
-        "cakephp/chronos": "^3.0@beta"
+        "cakephp/console": "^5.0",
+        "cakephp/http": "^5.0",
+        "cakephp/collection": "^5.0",
+        "cakephp/chronos": "^3.0"
     },
     "require-dev": {
         "symfony/var-dumper": "^6.2",
