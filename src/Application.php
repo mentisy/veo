@@ -8,6 +8,8 @@ use Avolle\Veo\Command\MatchCommand;
 use Avolle\Veo\Command\MatchesCommand;
 use Avolle\Veo\Command\PageCommand;
 use Avolle\Veo\Command\ScanCommand;
+use Avolle\Veo\Command\ScanTeams;
+use Avolle\Veo\Command\SearchClubsCommand;
 use Avolle\Veo\Command\TeamsCommand;
 use Cake\Console\CommandCollection;
 use Cake\Core\Configure;
@@ -41,6 +43,8 @@ class Application implements ConsoleApplicationInterface
         $commands->add('matches', MatchesCommand::class);
         $commands->add('page', PageCommand::class);
         $commands->add('scan', ScanCommand::class);
+        $commands->add('scanTeams', ScanTeams::class);
+        $commands->add('searchClubs', SearchClubsCommand::class);
         $commands->add('teams', TeamsCommand::class);
 
         return $commands;
